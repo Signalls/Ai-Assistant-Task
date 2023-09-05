@@ -17,6 +17,8 @@ const Home = ({ onSelectTopic, onClick, props }) => {
   const [score, setScore] = useState(0);
   const [selectedValue, setSelectedValue] = useState(null);
   let [options, setOptions] = useState("");
+  let [isLoading, setIsLoading] = useState(false);
+
 
   useEffect(() => {
     const fetchUserProfile = async () => {
@@ -161,6 +163,7 @@ const Home = ({ onSelectTopic, onClick, props }) => {
 
   const loadQuestionsfromdb = async (subject) => {
     setSelectedValue(subject);
+    setIsLoading(!isLoading)
     console.log(subject);
     const userId = localStorage.getItem("Id");
     if (userId) {
@@ -174,6 +177,7 @@ const Home = ({ onSelectTopic, onClick, props }) => {
 
         if (response.ok) {
           const responseText = await response.text();
+          setIsLoading(!isLoading)
           console.log("Success");
         } else {
           console.error("Failed to loadQuestion");
@@ -195,6 +199,7 @@ const Home = ({ onSelectTopic, onClick, props }) => {
         {showOption ? <OptionalQuestion options={options} updateScore={updateScore} onQuizComplete={handleQuizComplete} score={score} sendDataToParent={receiveDataFromChild} showOption={showOption} /> : ""}
         {showAskQuestion ? <AskQuestion onSubmit={CreateNewchat} text={question} /> : ""}
         {showAskQuestion ? <Answer answer={data} /> : " "}
+        {isLoading?<div className="loading-spinner">Loading...</div>:" "}
       </div>
     </div>
   );
