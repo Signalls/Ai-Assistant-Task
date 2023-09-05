@@ -15,11 +15,10 @@ const RightBar = ({ selectedTopic,updateScore,onSelectTopic,onClick,text,ShowAdd
     <div className='right-bar'>   
       <TopicSelection onSelectTopic={onSelectTopic} />
       <div className='sidebutton'>
-      <Score score={scoreone += updateScore} maxScore={100}/>
       <Button onClick={onClick} text={text} color={ShowAdd ? 'red' : '#000ff'} />
 
-      
       </div>
+      <a href="/Admin" className="Settindsbtn">Settings</a>
     </div>
   );
 };

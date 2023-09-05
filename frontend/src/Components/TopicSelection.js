@@ -27,7 +27,7 @@ const TopicSelection = ({ onSelectTopic }) => {
   const topicArray = Object.entries(topics);
   return (
     <div className="topic-selection">
-      <h3>Select subject</h3>
+      <h3 className='btn'>Select subject</h3>
       <ul className="topic-list">
         {topicArray.map(([topic, value])  => (
           <li
