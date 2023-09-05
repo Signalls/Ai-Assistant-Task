@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o6XTsTDKEfdwWtNINrstUctEbMMby9VGOERUe/Oox0jzn0UrXOlHXJy0LOYVcAT2GqQ/IDzEeO1XCcxZeY4V4w==",
+  "dgSpecHash": "iFuZCC1OVy+DLryR2KIwkRVlOTUprTHxHgOpjl8JEFsTEjFaRyieReJpo/L3IXVWw43T+btACX1EhnlNqa4YLg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\johnn\\OneDrive\\Desktop\\Github\\AiAssistant\\AI-SOLUTION\\AI-SOLUTION.csproj",
+  "projectFilePath": "C:\\Users\\johnn\\OneDrive\\Desktop\\MyProject\\Ai-Assistant-Task\\AI-SOLUTION\\AI-SOLUTION.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\johnn\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\johnn\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

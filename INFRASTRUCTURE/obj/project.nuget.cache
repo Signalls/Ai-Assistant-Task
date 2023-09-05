@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YZc16GnIZL9juPorKA03vIUnDD5h8dPNt0s48I1dy7HmGY3W7wbpfxDwFk1R7KKEsUZK1rdidyfFsXI9imSwgQ==",
+  "dgSpecHash": "Pi6Wm273DBrc4qYJEjM9AmPJJtU7vsSnC2uxFeDo/miMH3p24eUsrJ7CBBsUAkN1E7zETkfTlLz6FVkdKCQA/w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\johnn\\OneDrive\\Desktop\\Github\\AiAssistant\\INFRASTRUCTURE\\INFRASTRUCTURE.csproj",
+  "projectFilePath": "C:\\Users\\johnn\\OneDrive\\Desktop\\MyProject\\Ai-Assistant-Task\\INFRASTRUCTURE\\INFRASTRUCTURE.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\johnn\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.0\\microsoft.aspnetcore.cryptography.internal.6.0.0.nupkg.sha512",
     "C:\\Users\\johnn\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.0\\microsoft.aspnetcore.cryptography.keyderivation.6.0.0.nupkg.sha512",

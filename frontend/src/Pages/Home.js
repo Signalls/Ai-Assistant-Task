@@ -171,7 +171,7 @@ const Home = ({onSelectTopic, onClick}) => {
       <div className='bottom-component'>
        {showOption?<OptionalQuestion options ={options}updateScore={updateScore} onQuizComplete={handleQuizComplete}score={score}sendDataToParent={receiveDataFromChild}showOption={showOption}/>:""}
         {showAskQuestion ? <AskQuestion onSubmit={CreateNewchat} /> : ""}
-        {showAskQuestion?<Answer answer={data} />:" "}
+        {isShowpanel?<Answer answer={data} />:" "}
       </div>
     </div>
   );

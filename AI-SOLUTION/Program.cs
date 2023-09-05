@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using SERVICES.AccountService;
+using SERVICES.AccountServicet;
 using System.Text;
 using UserManagementSystemAPI.Profiles;
 using UserProfileData.Context;
