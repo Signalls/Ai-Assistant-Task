@@ -18,10 +18,14 @@ let [scoreone, setScore] = useState(0);
         />
         <h3 className='user-name'>Welcome, {user}</h3>
       </div>
-      <Score score={scoreone += updateScore} maxScore={100}/>
-
+      <div className='score-container'> 
+         <Score score={scoreone += updateScore} maxScore={100}/>
+      </div>
+      <label className='nav-item label'>Scores</label>
     </div>
   );
 };
+
+
 
 export default SideBar;

@@ -7,7 +7,7 @@ const LoadQuestionsComponent = (props) => {
   
     return (
       <div className="load-questions">
-        <h4>Load Questions</h4>
+        <h4 className="buttonlabel">Load Questions</h4>
         <div className="button-container">
           <button value={1} onClick={() => handleClick(1)} className="load-button">
             Maths

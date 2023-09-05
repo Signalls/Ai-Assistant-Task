@@ -13,10 +13,10 @@ const RightBar = ({onLoadQuestion, selectedTopic,updateScore,onSelectTopic,onCli
     
     
     <div className='right-bar'>   
-      <TopicSelection onSelectTopic={onSelectTopic} />
+      <TopicSelection onSelectTopic={onSelectTopic}/>
       <div className='sidebutton'>
       <Button onClick={onClick} text={text} color={ShowAdd ? 'red' : '#000ff'} />
-      <LoadQuestionsComponent onClick={onLoadQuestion}/>
+      <LoadQuestionsComponent onClick={onLoadQuestion} />
 
       
       </div>

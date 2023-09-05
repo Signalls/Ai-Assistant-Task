@@ -72,11 +72,6 @@ namespace SERVICES.AccountService
             request.Model = OpenAI_API.Models.Model.DavinciText;
             int maxTokensLimit = 4080; // Set your maximum limit here
 
-            if(request.MaxTokens > maxTokensLimit)
-            {
-                request.MaxTokens = maxTokensLimit;
-            }
-
 
             // Generate a response from the AI model
             var completions = await openAI.Completions.CreateCompletionAsync(request);

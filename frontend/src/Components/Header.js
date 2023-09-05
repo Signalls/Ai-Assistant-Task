@@ -9,8 +9,13 @@ import image from "./Assets/images-removebg-preview.png"
              </span>
               <ul className="nav">
                 <li className="nav-item">
-                  <a href="#" className="nav-link">
+                  <a href="/Home" className="nav-link">
                     Home
+                  </a>
+                </li>
+                <li className="nav-item">
+                  <a href="#" className="nav-link">
+                    About
                   </a>
                 </li>
                 <li className="nav-item active">
@@ -19,8 +24,8 @@ import image from "./Assets/images-removebg-preview.png"
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a href="#" className="nav-link">
-                    About
+                  <a href="/Login" className="nav-link">
+                    Log out
                   </a>
                 </li>
                 {/* Add more navigation items as needed */}
