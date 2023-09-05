@@ -498,7 +498,7 @@ input[type="password"] {
   font-size: 20px;
   margin-bottom: 10px;
   margin-top: 10px;
-  color: #007bff;
+  color: #323334;
   border-radius: 5px;
   border-color: #007bff;
 }
@@ -524,7 +524,7 @@ input[type="password"] {
 }
 
 .topic-item:hover {
-  background-color: #007bff;
+  background-color: #444547;
 }
 
 .selected {
@@ -535,7 +535,7 @@ input[type="password"] {
 }
 .chales{
   border-radius: 5px;
-  border-color: #007bff;
+  border-color: #ffffff;
 }
 
 
@@ -633,11 +633,11 @@ circle {
   cursor: pointer;
 
   &:hover {
-    background-color: #38a169;
+    background-color: #ababab;
   }
 
   &:active {
-    background-color: #2e8d57;
+    background-color: #ffffff;
   }
 }
 
@@ -647,8 +647,8 @@ circle {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  padding-right: 20px;
+  margin-top: 5px;
+  padding-right: 35px;
 
 }
 .score-container{
@@ -682,8 +682,10 @@ circle {
 }
 .buttonheading{
   font-size: larger;
-  color: #ffffff; /* Text color on hover */
-  padding-right: 10px;
+  color: #454242; /* Text color on hover */
+  padding-bottom: 0px;
+  padding-top: 10px;
+
 
 }
 .load-question{
