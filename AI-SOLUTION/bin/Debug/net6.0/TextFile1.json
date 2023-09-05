@@ -1,0 +1,33 @@
+ {
+  "id": "cmpl-7sC0QKuby8RW85ICOBoHMQqgxN3pC",
+  "completions": [
+    {
+      "text": "\n\nYou can get to Abuja by plane, car, or bus.",
+      "index": 0,
+      "logprobs": null,
+      "finishReason": "length"
+    }
+  ],
+  "usage": {
+    "completionTokens": 16,
+    "promptTokens": 8,
+    "totalTokens": 24
+  },
+  "created": "2023-08-27T15:30:18",
+  "createdUnixTime": 1693150218,
+  "model": {
+    "modelID": "text-davinci-003",
+    "ownedBy": null,
+    "object": null,
+    "created": null,
+    "createdUnixTime": null,
+    "permission": [],
+    "root": null,
+    "parent": null
+  },
+  "object": "text_completion",
+  "organization": "user-6siw21eh30hnqhhydpldg2ho",
+  "processingTime": "00:00:00.4360000", 
+  "requestId": "e276bd50b1663bb18c910b1b0697dbc1",
+  "openaiVersion": "2020-10-01"
+}

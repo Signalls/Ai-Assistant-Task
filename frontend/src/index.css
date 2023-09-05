@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.bottom-component {
+  margin-top: 10vh; /* Push this component to the bottom */
+}
+
+.container2 {
+  max-width: 300px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 200px;
+  border: 1px solid steelblue;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.maincontainer {
+  display: flex;
+  /*align-items: center;*/
+}
+.sidebar {
+  display: inline-block;
+  justify-content: space-between;
+  align-items: left;
+  margin-bottom: 20px;
+  border: 1px solid steelblue;
+  min-height: 100vh;
+  width: 200px;
+  background-color: aliceblue;
+
+}
+
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.task {
+  background: #f4f4f4;
+  margin: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.task.reminder {
+  border-left: 5px solid green;
+}
+
+.task h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-form2 {
+  margin-bottom: 40px;
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control-check label {
+  flex: 1;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+
+  
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.signup-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+  padding-bottom: 5px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 16px;
+}
+
+
+
+
+/* Sidebar Styles */
+/* Left Sidebar Styles */
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  height: 100vh; /* Full viewport height */
+  position: fixed;
+  padding-top: 45px;
+  top: 0;
+  left: 0;
+  overflow-x: auto;
+}
+
+/* Main Content Styles */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;  /* Grow to fill available space */
+  /* Add your styles for the main content here */
+}
+
+/* Right Sidebar Styles */
+.right-bar {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  height: 100vh; /* Full viewport height */
+  position: fixed;
+  padding-top: 45px;
+  top: 0;
+  right: 0;
+  overflow-x: auto;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #555;
+}
+
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-link {
+  padding: 15px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  background-color: #555;
+}
+
+.nav-link a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Active link */
+.nav-link.active {
+  background-color: #555;
+}
+
+.nav-link.active a {
+  font-weight: bold;
+}
+
+
+/* Add these styles to your existing CSS or create a new CSS file */
+
+/* Container Styles */
+.maincontainer {
+  display: flex;
+  align-items: flex-start; /* Align form to the top of the screen */
+  height: 100vh; /* Ensure the container takes up the full viewport height */
+}
+
+.container {
+  flex-grow: 1; /* Allow the content to fill the available space */
+  padding: 20px; /* Add some padding around the content */
+}
+
+/* Form Styles */
+.add-form2 {
+  width: 400px; /* Limit the form's width to prevent it from becoming too wide */
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+/* Button Styles */
+.btn {
+  background-color: #373f48;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #191e23;
+}
+
+
+
+
+/* Add these styles to your existing CSS or create a new CSS file */
+
+/* Add these styles to your existing CSS or create a new CSS file */
+
+
+/* Add these styles to your CSS file or component-specific CSS */
+
+.askquestion-form {
+  margin-top: 20px; /* Add some margin to the top of the form */
+  text-align: center;
+}
+
+
+
+.input-container {
+  display: flex;
+  align-items: center; /* Align child elements vertically */
+  
+}
+
+.text-input {
+  flex-grow: 1;
+  padding: 15px; /* Increase padding for a larger text input */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 18px; /* Increase font size for a larger text input */
+  margin-right: 10px;
+}
+
+.icon-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.icon-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+/* ResponsePanel.css */
+
+.response-panel {
+  width: 800px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+
+}
+
+.response-header {
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 0;
+  border-radius: 5px 5px 0 0;
+  
+}
+
+.response-header h2 {
+  margin: 0;
+}
+
+.response-body {
+  padding: 10px;
+
+}
+
+.response-footer {
+  text-align: center;
+  padding-top: 10px;
+
+}
+
+.response-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.response-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Header Styles */
+.header {
+  background-color: #333;
+  color: #fff;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 20px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-item:hover {
+  background-color: #555;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Active link */
+.nav-item.active {
+  background-color: #555;
+  font-weight: bold;
+}
+
+
+/* TopicSelection.css */
+
+/* Modern Topic Selection Styles */
+
+.topic-selection {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.topic-selection h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #007bff;
+  border-radius: 5px;
+  border-color: #007bff;
+}
+
+.topic-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.topic-item {
+  cursor: pointer;
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+  color: #333;
+}
+
+.topic-item:hover {
+  background-color: #007bff;
+}
+
+.selected {
+  background-color: #007bff;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+}
+.chales{
+  border-radius: 5px;
+  border-color: #007bff;
+}
+
+
+
+
+
+/* MathQuestion.css */
+
+.question-container {
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.question-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.options label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #444;
+}
+
+.options input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Add more styling as needed */
+.sidebutton{
+  margin: 10px;
+  padding-left:40px ;
+}
+
+
+/* Score component container */
+.score-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-right: 35px;
+  color: #000;
+
+}
+
+/* Circular progress circle */
+.circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  color: #000;
+}
+
+/* SVG circle styles */
+svg {
+  transform: rotate(-90deg);
+  width: 100px;
+  height: 100px;
+}
+
+circle {
+  transform-origin: center;
+  
+}
+
+/* Circular progress bar */
+.circle-progress {
+  transition: stroke-dasharray 0.5s ease-in-out;
+}
+
+/* Score text */
+.score {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  font-weight: bold;
+  color: #007bff;
+}
