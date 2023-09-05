@@ -71,12 +71,9 @@ namespace SERVICES.AccountServicet
             CompletionRequest request = new CompletionRequest();
             request.Prompt = question;
             request.Model = OpenAI_API.Models.Model.DavinciText;
-            int maxTokensLimit = 4080; // Set your maximum limit here
+            request.MaxTokens = 4080; // Set your maximum limit here
 
-            if(request.MaxTokens > maxTokensLimit)
-            {
-                request.MaxTokens = maxTokensLimit;
-            }
+
 
 
             // Generate a response from the AI model
