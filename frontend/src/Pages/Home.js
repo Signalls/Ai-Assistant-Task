@@ -159,37 +159,11 @@ const Home = ({ onSelectTopic, onClick, props }) => {
     setShowAskQuestion(!showAskQuestion);
   };
 
-  const loadQuestionsfromdb = async (subject) => {
-    setSelectedValue(subject);
-    console.log(subject);
-    const userId = localStorage.getItem("Id");
-    if (userId) {
-      try {
-        const response = await fetch(`https://localhost:7137/api/Chat/chat?userId=${userId}&TopicId=${subject}`, {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
-
-        if (response.ok) {
-          const responseText = await response.text();
-          console.log("Success");
-        } else {
-          console.error("Failed to loadQuestion");
-        }
-      } catch (error) {
-        console.error("An error occurred:", error);
-      }
-    } else {
-      console.log("User not found.");
-    }
-  };
-
+ 
   return (
     <div className='main-content'>
       <Header />
-      <RightBar onLoadQuestion={loadQuestionsfromdb} selectedTopic={selectedTopic} onSelectTopic={handleTopicSelect}  onClick={handleButtonClick} text={!text ? "Ask Question" : "Close Panel"} showAskQuestion={showAskQuestion} />
+      <RightBar selectedTopic={selectedTopic} onSelectTopic={handleTopicSelect}  onClick={handleButtonClick} text={!text ? "Ask Question" : "Close Panel"} showAskQuestion={showAskQuestion} />
       <SideBar user={appuser} updateScore={score}/>
       <div className='bottom-component'>
         {showOption ? <OptionalQuestion options={options} updateScore={updateScore} onQuizComplete={handleQuizComplete} score={score} sendDataToParent={receiveDataFromChild} showOption={showOption} /> : ""}
