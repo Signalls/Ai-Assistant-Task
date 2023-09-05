@@ -64,7 +64,6 @@ const Home = ({ onSelectTopic, onClick, props }) => {
 
   const CreateNewchat = async (question) => {
     const userId = localStorage.getItem("Id");
-    setIsLoading(true)
     if (userId) {
       try {
         const response = await fetch(`https://localhost:7137/api/Chat/Newchat?UserId=${userId}&question=${question}`, {
@@ -94,7 +93,7 @@ const Home = ({ onSelectTopic, onClick, props }) => {
 
   const handleTopicSelect = async (topic) => {
     const userId = localStorage.getItem("Id");
-    setisDone(false);
+    setisDone(false)
     console.log(topic);
     if (userId) {
       try {
@@ -131,7 +130,6 @@ const Home = ({ onSelectTopic, onClick, props }) => {
           localStorage.setItem('answerData', JSON.stringify(answerData));
 
           setOptions(responseOption);
-          setIsLoading(false)
           console.log(responseOption);
           setOption(!showOption);
         } else {
@@ -186,6 +184,7 @@ const Home = ({ onSelectTopic, onClick, props }) => {
           setIsLoading(false);
           setisDone(true);
           console.log("Success");
+
         } else {
           console.error("Failed to loadQuestion");
         }
@@ -199,6 +198,8 @@ const Home = ({ onSelectTopic, onClick, props }) => {
 
   return (
     <div className='main-content'>
+      
+     
       <Header />
       <RightBar onLoadQuestion={loadQuestionsfromdb} selectedTopic={selectedTopic} onSelectTopic={handleTopicSelect} updateScore={score} onClick={handleButtonClick} text={!text ? "Ask Question" : "Close Panel"} showAskQuestion={showAskQuestion} />
       <SideBar user={appuser} updateScore={score} />
@@ -206,10 +207,10 @@ const Home = ({ onSelectTopic, onClick, props }) => {
         {showOption ? <OptionalQuestion options={options} updateScore={updateScore} onQuizComplete={handleQuizComplete} score={score} sendDataToParent={receiveDataFromChild} showOption={showOption} /> : ""}
         {showAskQuestion ? <AskQuestion onSubmit={CreateNewchat} text={question} /> : ""}
         {showAskQuestion ? <Answer answer={data} /> : " "}
+        {isLoading?<div className="loading-spinner">Loading Questions from database...</div>:" "}
+        {isDone?<div className="loading-spinner">Questions Loaded Successfully!</div>:" "} 
       </div>
-      {isLoading?<div className="loading-spinner">Loading Questions from database...</div>:" "}
-      {isDone?<div className="loading-spinner">Questions Loaded Successfully!</div>:" "}
-
+      
     </div>
   );
 }

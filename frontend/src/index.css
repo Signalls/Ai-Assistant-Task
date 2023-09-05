@@ -224,7 +224,7 @@ input[type="password"] {
 /* Right Sidebar Styles */
 .right-bar {
   width: 250px;
-  background-color: #333;
+  background-color: #dedada;
   color: #fff;
   height: 100vh; /* Full viewport height */
   position: fixed;
@@ -625,10 +625,10 @@ circle {
   color: #007bff;
 }
 .load-button {
-  background-color: #42b983;
+  background-color: #5f6160;
   color: white;
   font-size: 16px;
-  padding: 10px 20px;
+  padding: 10px 10px;
   border-radius: 5px;
   cursor: pointer;
 
@@ -679,4 +679,13 @@ circle {
 .label:hover {
   background-color: #333; /* Background color on hover */
   color: #fff; /* Text color on hover */
+}
+.buttonheading{
+  font-size: larger;
+  color: #ffffff; /* Text color on hover */
+  padding-right: 10px;
+
+}
+.load-question{
+align-self: center;
 }
