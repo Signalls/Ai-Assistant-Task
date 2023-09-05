@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gfqbm6Q+ZY5eZzH8FKgeKtfNzdrpY+vYr0oGOlpQGTrZGL0qxBmHnzU4AdVNcqE8Fty7lLbGpH6w1PV1Jpm7zQ==",
+  "dgSpecHash": "sNDnHdu4PRmcH/6tI6a3jFg0vL5wh5pf7BVmo2ERX8pV/VTNR7cYCHTKO5uPsBj8bPXOkqWy3n1no/OQESwtLw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\johnn\\OneDrive\\Desktop\\Github\\AiAssistant\\SERVICES\\SERVICES.csproj",
+  "projectFilePath": "C:\\Users\\johnn\\OneDrive\\Desktop\\MyProject\\Ai-Assistant-Task\\SERVICES\\SERVICES.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\johnn\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\johnn\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.0\\microsoft.aspnetcore.cryptography.internal.6.0.0.nupkg.sha512",

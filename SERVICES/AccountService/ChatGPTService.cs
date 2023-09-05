@@ -6,8 +6,9 @@ using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using OpenAI_API;
 using OpenAI_API.Completions;
+using SERVICES.AccountService;
 
-namespace SERVICES.AccountService
+namespace SERVICES.AccountServicet
 {
     public class ChatGPTService : IChatGPTService
     {
