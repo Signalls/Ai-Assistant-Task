@@ -1,9 +1,12 @@
 import React from 'react';
 import image from './Assets/download.png'
+import Score from './Score';
+import { useState} from 'react';
 
 
-const SideBar = ({user}) => {
+const SideBar = ({user,updateScore}) => {
   
+let [scoreone, setScore] = useState(0);
   
     return (
     <div className='sidebar'>
@@ -15,17 +18,8 @@ const SideBar = ({user}) => {
         />
         <h3 className='user-name'>Welcome, {user}</h3>
       </div>
-      <ul className='nav-links'>
-        <li className='nav-link'>
-          <a href='#'>Profile</a>
-        </li>
-        <li className='nav-link'>
-          <a href='#'>Settings</a>
-        </li>
-        <li className='nav-link'>
-          <a href='/Login'>Logout</a>
-        </li>
-      </ul>    
+      <Score score={scoreone += updateScore} maxScore={100}/>
+
     </div>
   );
 };

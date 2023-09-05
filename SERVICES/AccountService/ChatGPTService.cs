@@ -113,7 +113,9 @@ namespace SERVICES.AccountService
         // Use the OpenAI chat model to generate a response with a specific prompt
         public async Task<string> UseChat2(int TopicId, string question)
         {
-            var openAI = new OpenAIAPI("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");
+            string openAIKey = _configuration["OpenAI:APIKey"];
+
+            var openAI = new OpenAIAPI(openAIKey);
             CompletionRequest request = new CompletionRequest();
             request.Prompt = $"Ask ten questions with options A,B,C,D and an answer on {question}";
             request.Model = OpenAI_API.Models.Model.DavinciText;
